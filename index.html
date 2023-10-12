@@ -4,43 +4,46 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Horiseon</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
     <header class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <nav>
-            <ul>
+        <nav id="navbar">
+            <ul id="menu">
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <a href="#about">about</a>
                 </li>
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="#work">work</a>
                 </li>
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <a href="#contact">contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="hero" aria-label="meeting desk with people"></div>
+    <section class="HI">
+        <h1>I AM LEXI</h1> 
+    </section>
+    <!-- photo of me -->
+    </div>
     <section class="content">
-        <article class="essentials">
-            <img src="./assets/images/search-engine-optimization.jpg" alt="table with office supplies, a commpter, a cup of coffee, and a notebook" class="float-left" />
-            <h2>Search Engine Optimization</h2>
+        <article id="about" class="essentials">
+            <img src="./assets/images/me.jpg" alt="table with office supplies, a commpter, a cup of coffee, and a notebook" class="float-left" />
+            <h2>About Me</h2>
             <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                I like bugs and birds. I am okay at driving. I cook well. I dont like half-assing stuff. Purple and green are pretty colours.
             </p>
         </article>
-        <article class="essentials">
+        <article id="work" class="essentials">
             <img src="./assets/images/online-reputation-management.jpg" alt="a man using hnis phone and computer. on the lapton is an increasing bar graph depicting reputation" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </article>
-        <article class="essentials">
+        <article id="contact" class="essentials">
             <img src="./assets/images/social-media-marketing.jpg" alt="downward veiw of a bust meeting table with icon scattered about" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
@@ -77,6 +80,26 @@
             &copy; 2023 Horiseon Social Solution Services, Inc.
         </p>
     </footer>
+
+
+<script>
+    var navbar = document.getElementById("navbar")
+    var menu = document.getElementById("menu")
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+
+
+
 </body>
 
 </html>
