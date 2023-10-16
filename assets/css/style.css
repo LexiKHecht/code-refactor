@@ -10,40 +10,19 @@ html {
 
 body {
     background-color: #d8c3da;
+    width: 100vw;
+    height: 100vh;
 }
 /* start of header and nav area */
 .header {
-    padding: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 5px;
+    margin-left: 2vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
-}
-
-.header h1 {
-    
-    font-size: 48px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.HI {
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: -0.05em;
-    color:  #ae92b1;
-    border: dashed white;
-    border-width: 2px;
-    margin: 0px 450px 500px 450px;
-    
-}
-
-.header nav {
-    width: 100%;
-    padding-top: 200px;
-    text-align: center;
 }
 
 .header nav ul {
@@ -53,22 +32,49 @@ body {
 
 .header nav ul li {
     font-size: 15px;
-    display: inline-block;
-    margin-right: 25px; 
-    margin-left: 25px;
+    display: inline-flex;
+    align-items: center;
+    padding-left:2vw;
+    padding-right:2vw;
 }
 
 nav.sticky{
     position:fixed;
     top: 0;
     left: 0;
-    padding: 10px 8%;
+    padding: 10px 8%; 
     background-color: #d8c3da;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.HI {
+    font-size: 35px;
+    text-align:center;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 20%;
+    letter-spacing: 0.1em;
+    color:  #ffffff;
+    border: dashed white;
+    border-width: 2px;
+    margin-left: 38vw;
+    margin-right: 40vw;
+    margin-bottom: 100%;
+    width: 300px;
+    height: 65px;
+    border-radius: 10%;
+    box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px rgb(231, 160, 231),
+      inset -20px 0 80px rgb(174, 83, 216),
+      inset 20px 0 300px rgb(229, 129, 79),
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px rgb(229, 129, 79),
+      10px 0 80px rgb(174, 83, 216);
+}
 /* end of header and nav area */
 a {
     color: #ffffff;
@@ -77,15 +83,6 @@ a {
 
 p {
     font-size: 16px;
-}
-
-.hero {
-    height: 50px;
-    width: 50%;
-    margin-bottom: 25px;
-    margin-left: 100vh;
-    display: inline-flex;
-
 }
 
 .float-left {
@@ -99,21 +96,25 @@ p {
 }
 
 #bigger-picture {
+    display: flex;
     width: 250px;
     margin-top: 20px;
 }
 
 #smaller-picture {
+    display: flex;
     width: 200px;
     margin-top: 35px;
 }
 
 .content {
-    width: 75%;
+    width: 75vw;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 13vw;
     align-items: center;
-    /* boder-color: color:  #ae92b1; */
+    /* border-style: solid;
+    border-color:  #ae92b1; 
+    border-radius: 10%; */
 }
 
 /* start of main content */
@@ -128,38 +129,49 @@ p {
 
 .main img {
     max-height: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(245, 178, 145);
 }
 
 #about h2 {
     margin-bottom: 20px;
-    margin-left: 600px;
+    margin-left: 40vw;
     font-size: 36px;
 }
 
 #about p {
     margin-top: 15px;
-    margin-left: 450px;
+    margin-left: 35vw;
     margin-right: 100px;
 }
 
 #work h2 {
     margin-bottom: 20px;
-    margin-left: 160px;
+    margin-left: 13vw;
     font-size: 36px;
 }
 
 #work p {
-    margin-left: 70px;
+    margin-left: 6vw;
+    margin-right: 40vw;
+}
+
+#work ul {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 39vw;
 }
 
 #contact h2 {
     margin-bottom: 20px;
-    margin-left: 300px;
+    margin-left: 20vw;
     font-size: 36px;
 }
 
 #contact p {
-    margin-left: 100px;
+    margin-left: 9vw;
 }
 
 #contact a {
@@ -197,3 +209,32 @@ p {
     font-size: 20px;
 }
 /* end of footer */
+@media screen and (max-width: 992px) {
+    header {
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+ @media screen and (max-width: 992px) {
+     div {
+        align-items: center;
+         justify-content: space-evenly;
+         text-align: center;
+     }
+ }
+ @media screen and (max-width: 768px) {
+    header {
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    div {
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+  }
