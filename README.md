@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 02 Advanced CSS: Portfolio
 
 ## Your Task
@@ -12,6 +13,15 @@ With these points in mind, in this Challenge you’ll set yourself up for future
 
 Let’s take a look at what a user story written from the perspective of a hiring manager might look like. As you might remember from your first Challenge, we follow the AS AN / I WANT / SO THAT format. 
 
+=======
+# 01 HTML, CSS, and Git: Code Refactor
+
+## Description of Assignment
+
+```
+Refactor and consolidate code for an already working webpage making sure to not alter the appearence of the website.
+```
+>>>>>>> 2a9160eb8316ad205c7a86f9ac7ee4d5d2d1557b
 
 ## User Story
 
@@ -49,6 +59,7 @@ The following animation shows the web application's appearance and functionality
 
 ![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
 
+<<<<<<< HEAD
 
 ## Grading Requirements
 
@@ -104,3 +115,9 @@ You are required to submit BOTH of the following for review:
 
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+![Screenshot (5)](https://github.com/LexiKHecht/code-refactor/assets/145725343/c5835fff-33aa-419b-a646-8683307e65ed)
+
+https://lexikhecht.github.io/code-refactor/
+
+>>>>>>> 2a9160eb8316ad205c7a86f9ac7ee4d5d2d1557b
